@@ -1,0 +1,32 @@
+.customers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 20px; /* Espacio interno en el contenedor */
+  }
+  
+  .customer-card {
+    width: 300px; /* Ancho de cada tarjeta */
+    margin: 10px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .customer-details p {
+    margin: 5px 0;
+  }
+  
+  mat-card-actions {
+    justify-content: space-between; /* Distribuir botones al final */
+  }
+  
+  mat-card-title {
+    font-size: 1.4em; /* Tamaño de fuente de título */
+  }
+  
+  mat-card-subtitle {
+    font-size: 1.1em; /* Tamaño de fuente del subtítulo */
+    color: grey;
+  }
+  

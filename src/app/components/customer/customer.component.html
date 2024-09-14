@@ -1,0 +1,29 @@
+<mat-card *ngIf="customer">
+    <mat-card-header>
+      <mat-card-title>{{ customer.name }}</mat-card-title>
+      <mat-card-subtitle>{{ customer.tradeName }}</mat-card-subtitle>
+      
+    </mat-card-header>
+    <div class="customers-container">
+      <mat-card *ngFor="let customer of customer" class="customer-card">
+        <mat-card-header>
+          <mat-card-title>{{ customer.name }}</mat-card-title>
+          <mat-card-subtitle>{{ customer.tradeName }}</mat-card-subtitle>
+        </mat-card-header>
+        
+        <mat-card-content>
+          <div class="customer-details">
+            <p><strong>NRC:</strong> {{ customer.nrc }}</p>
+            <p><strong>Departamento:</strong> {{ customer.department?.name }}</p>
+            <p><strong>Municipio:</strong> {{ customer.municipality?.name }}</p>
+            <p><strong>Dirección:</strong> {{ customer.address }}</p>
+            <p><strong>Email:</strong> {{ customer.email }}</p>
+          </div>
+        </mat-card-content>
+        
+        
+
+    
+
+  </mat-card>
+  
